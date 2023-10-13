@@ -12,7 +12,8 @@ public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
-//   생성자가 딱 1개 있으면 @Autowired를 생략해도 자동 주입 된다. 물론 스프링 빈에만 확인 된다.
+
+    //   생성자가 딱 1개 있으면 @Autowired를 생략해도 자동 주입 된다. 물론 스프링 빈에만 확인 된다.
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
